@@ -10,8 +10,22 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+/* const element = React.createElement('p', null, 'Hola Mundo React!');
+const MyElement = () => <p>Hola Mundo JSX!</p>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const Li = ({ children, estado, cedula }) => {
+  return (
+    <li>{children} {estado}</li>
+  )
+}
+
+const MyUnOrderedList = () =>
+  <ul>
+    <Li estado={'Franco'} cedula={'92549942'}>Victor</Li>
+    <Li estado={'Rios'}>Katia</Li>
+    <Li estado={'Franco'}>Sara</Li>
+  </ul>
+
+ReactDOM.render(<MyUnOrderedList />, document.getElementById('root')); */
+
 reportWebVitals();
