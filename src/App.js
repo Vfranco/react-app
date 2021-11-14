@@ -1,9 +1,22 @@
 import Button from "./Button";
 
+const arr = [
+    'chanchito',
+    'perrito',
+    'gatico'
+]
+
 const App = () => {
+    const miVariable = false;
+    
+    if(miVariable) {
+        return <p>Mi Variable esta en true</p>
+    }
+
     return (
         <div>
-            <h1>Hola Mundo</h1>
+            <h1 onClick={(e) => console.log('click', e)}>Hola Mundo</h1>
+            {arr.map(el => <p key={el}>{el}</p>)}
             <Button onClick={ () => alert('clikeado!') }>Enviar</Button>
         </div>
     )
